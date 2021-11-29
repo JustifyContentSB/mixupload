@@ -1,0 +1,44 @@
+header.header
+    h1.visually-hidden Mixupload #[br] Best website for djs created by djs
+    .header__inner.container
+        a.header__burger(href="#")
+            span.visually-hidden show music menu
+            svg.svg-icon
+                use(href="images/sprites/main.stack.svg#svg-burger")
+        a.header__logo(href="#")
+            img.theme-img.theme-img--visible(src="images/icons/logo.svg", alt="logo" width="140" height="14")
+            img.theme-img(src="images/icons/logo-light.svg", alt="logo" width="140" height="14")
+        form.header__search(action="#")
+            input.header__search-field(type="text" placeholder="Search song, artist and label")
+            button.header__search-btn
+                span.visually-hidden search song, artist and label
+                svg.svg-icon
+                    use(href="images/sprites/main.stack.svg#svg-search")
+            button.header__search-micro
+                span.visually-hidden voice search
+                svg.svg-icon
+                    use(href="images/sprites/main.stack.svg#svg-microphone")
+        .header__time
+            a.header__time-toggle(href="#")
+                span.visually-hidden change the color theme
+                svg.theme-img.theme-img--visible
+                    use(href="images/sprites/main.stack.svg#svg-moon")
+                svg.theme-img
+                    use(href="images/sprites/main.stack.svg#svg-sun")
+        .header__manage
+            a.header__btn.header__hide(href="#")
+                span.visually-hidden messages
+                svg.svg-icon
+                    use(href="images/sprites/main.stack.svg#svg-message")
+            a.header__btn.header__hide(href="#")
+                span.visually-hidden notifications
+                svg.svg-icon
+                    use(href="images/sprites/main.stack.svg#svg-notification")
+            a.header__btn(href="#")
+                span.visually-hidden cart
+                svg.svg-icon
+                    use(href="images/sprites/main.stack.svg#svg-cart")
+        .header__user
+            a.header__user-cab(href="#")
+                span.visually-hidden profile button
+                img(src="images/icons/ava.png", alt="avatar" width="30" height="30")

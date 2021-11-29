@@ -1,0 +1,97 @@
+.tracks
+   &__list
+      padding-left: 14px
+   &__item
+      display: block
+      width: 126px
+      min-width: 126px
+      margin-right: 12px
+      margin-bottom: 12px
+      padding: 9px
+      border: 1px solid var(--theme040)
+      border-radius: 10px
+      cursor: pointer
+      background: var(--theme010)
+      &--hide
+         display: none
+   &__poster
+      margin-bottom: 8px
+      img
+         display: block
+         margin: 0 auto
+         width: 100%
+         height: auto
+         border-radius: 10px
+   &__title
+      margin-bottom: 8px
+      font-weight: normal
+      font-size: 11px
+      line-height: 120%
+      color: var(--theme900)
+   &__author
+      margin-bottom: 8px
+      font-size: 10px
+      line-height: 100%
+      color: #808080
+   &__about
+      font-weight: 400
+      font-size: 10px
+      line-height: 100%
+      color: #B3B3B3
+      &-rate
+         margin-left: 3px
+         font-weight: bold
+         color: var(--accent)
+      
+@media screen and (min-width: 1024px)
+   .tracks
+      &__list
+         padding: 0 28px
+      &__item
+         width: calc(20% - 12px)
+         padding: 14px
+         margin-right: 15px
+         border: none
+         background: var(--theme010)
+         &:nth-child(5n)
+            margin-right: 0
+      &__poster
+         margin-bottom: 12px
+      &__title
+         margin-bottom: 12px
+         font-size: 12px
+      &__author
+         margin-bottom: 12px
+         font-size: 11px
+      &__about
+         font-size: 11px
+         &-rate
+            margin-left: 9px
+
+@media screen and (min-width: 1366px)
+   .tracks
+      &__title
+         font-size: 13px
+      &__author
+         font-size: 12px
+      &__about
+         font-size: 12px
+
+@media screen and (min-width: 1440px)
+   .tracks
+      &__list
+         padding: 0 50px
+      &__item
+         padding: 18px
+
+@media screen and (min-width: 1920px)
+   .tracks
+      &__list
+         display: grid
+         grid-template-columns: repeat(6, 1fr)
+         grid-gap: 16px
+      &__item
+         width: auto
+         margin: 0
+         &--hide
+            display: block

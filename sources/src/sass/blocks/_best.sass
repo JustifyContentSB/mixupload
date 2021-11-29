@@ -1,0 +1,49 @@
+.best
+   margin-bottom: 12px
+   &__header
+      margin-bottom: 12px
+      padding: 0 14px
+   &__title
+      margin-bottom: 13px
+   &__slider
+      display: flex
+      overflow-x: auto
+      -ms-overflow-style: none
+      overflow: -moz-scrollbars-none
+      &::-webkit-scrollbar
+         width: 0
+         height: 0
+   &__more
+      display: flex
+      width: calc(100% - 28px)
+      margin: 0 auto
+
+@media screen and (min-width: 768px)
+   .best
+      &__more
+         display: none
+
+@media screen and (min-width: 1024px)
+   .best
+      margin-bottom: 20px
+      &__header
+         padding: 0 28px
+      &-playlist
+         margin-bottom: 15px
+      &__slider
+         flex-wrap: wrap
+         overflow-x: visible
+
+@media screen and (min-width: 1440px)
+   .best
+      margin-bottom: 27px
+      &-authors
+         margin-bottom: 95px
+      &__header
+         padding: 0 50px
+
+@media screen and (min-width: 1920px)
+   .best
+      margin-bottom: 50px
+      &-playlist
+         margin-bottom: 38px

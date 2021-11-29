@@ -1,0 +1,90 @@
+.features
+   margin-bottom: 6px
+   &__list
+      padding-bottom: 20px
+      padding-left: 14px
+      display: flex
+      overflow-x: auto
+      -ms-overflow-style: none
+      overflow: -moz-scrollbars-none
+      &::-webkit-scrollbar
+         width: 0
+         height: 0
+   &__item
+      width: 169px
+      min-width: 169px
+      padding: 13px 15px 10px
+      margin-right: 12px
+      background: var(--theme010)
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1)
+      border-radius: 10px
+   &__title
+      margin-bottom: 10px
+      padding-bottom: 13px
+      font-weight: bold
+      font-size: 12px
+      line-height: 120%
+      text-transform: uppercase
+      position: relative
+      &::after
+         content: ''
+         position: absolute
+         bottom: 0
+         left: 0
+         width: 30px
+         height: 3px
+         background: var(--accent)
+         border-radius: 10px
+   &__text
+      font-weight: 300
+      font-size: 11px
+      line-height: 130%
+      
+@media screen and (min-width: 768px)
+   .features
+      &__list
+         padding: 0 14px 20px
+      &__item
+         width: calc(25% - 9px)
+         margin-right: 12px
+         &:nth-child(4n)
+            margin-right: 0
+
+@media screen and (min-width: 1024px)
+   .features
+      margin-bottom: 36px
+      &__list
+         padding: 0 28px
+         overflow-x: visible
+         flex-wrap: wrap
+      &__item
+         width: calc(25% - 12px)
+         padding: 15px
+         margin-right: 16px
+      &__title
+         margin-bottom: 20px
+         padding-bottom: 15px
+         font-size: 14px
+         &::after
+            height: 5px
+      &__text
+         font-size: 12px
+
+@media screen and (min-width: 1366px)
+   .features
+      margin-bottom: 40px
+      &__item
+         padding: 25px
+      &__title
+         font-size: 20px
+      &__text
+         font-size: 14px
+
+@media screen and (min-width: 1440px)
+   .features
+      &__list
+         padding: 0 50px
+
+@media screen and (min-width: 1920px)
+   .features
+      margin-bottom: 50px

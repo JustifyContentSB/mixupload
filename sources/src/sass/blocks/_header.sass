@@ -1,0 +1,156 @@
+.header
+    padding: 10px 0
+    border-bottom: 1px solid var(--theme040)
+    background: var(--theme000)
+    position: fixed
+    z-index: 90
+    top: 0
+    left: 0
+    right: 0
+    &__inner
+        display: flex
+        align-items: center
+    &__burger
+        width: 24px
+        height: 24px
+        margin-right: 14px
+        .svg-icon
+            width: 100%
+            height: auto
+    &__logo
+        margin-right: auto
+        img
+            width: 100%
+    &__time
+        margin-right: 5px
+        &-toggle
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 30px
+            height: 30px
+        svg
+            width: 20px
+            height: 20px
+            fill: var(--theme700)
+    &__search
+        display: none
+        &-field
+            display: none
+            background: var(--theme030)
+            border: none
+            border-radius: 10px
+            font-size: 14px
+            line-height: 100%
+            color: var(--theme999)
+            &::placeholder
+                color: var(--theme400)
+        &-btn
+            display: block
+            width: 20px
+            height: 20px
+        &-micro
+            display: none
+    &__manage
+        display: flex
+    &__user
+        display: flex
+        margin-left: 5px
+        a
+            margin-left: 12px
+            &:first-child
+                margin-left: 0
+        &-cab
+            display: block
+            width: 30px
+            height: 30px
+            img
+                width: 100%
+                border-radius: 50%
+    &__btn
+        width: 30px
+        min-width: 30px
+        height: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+    &__hide
+        display: none
+
+@media screen and (min-width: 768px)
+    .header
+        &__logo
+            margin-right: auto
+        &__time
+            margin-left: 26px
+            display: block
+        &__search
+            margin: 0 auto
+            margin-left: 32px
+            display: flex
+            flex-grow: 1
+            &-field
+                display: block
+                height: 34px
+                padding: 8px 12px
+                flex-grow: 1
+            &-btn
+                display: none
+            &-micro
+                width: 38px
+                margin-left: 12px
+                background: var(--theme030)
+                border-radius: 10px
+                display: flex
+                justify-content: center
+                align-items: center
+                .svg-icon
+                    fill: var(--theme500)
+        &__manage
+            margin-left: 10px
+            a
+                margin-left: 14px
+                &:first-child
+                    margin-left: 0
+        &__hide
+            display: flex
+        &__user
+            margin-left: 26px
+        &__cart
+            margin-left: 20px
+
+@media screen and (min-width: 1024px)
+    .header
+        padding: 12px 0
+        min-height: 64px
+        border-bottom: 0
+        &__inner
+            padding: 0 32px
+        &__burger
+            width: 26px
+            height: 26px
+            margin-right: 30px
+        &__logo
+            width: 170px
+        &__search
+            margin-right: 12px
+            &-field
+                padding: 13px 16px
+                height: 40px
+            &-micro
+                width: 48px
+        &__user
+            &-cab
+                width: 36px
+                height: 36px
+
+@media screen and (min-width: 1280px)
+    .header
+        left: 250px
+        &__logo
+            display: none
+        &__search
+            margin-left: 0
+
+        
+            

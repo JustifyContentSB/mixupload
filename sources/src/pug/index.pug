@@ -1,0 +1,443 @@
+extends base/_layout
+block head
+    title Mixupload
+block page
+    section.listen.container
+        .listen__inner
+            .background-image
+                picture
+                    source(srcset="images/listen/listen-1366.webp" media="(min-width: 1366px)" type="image/webp")
+                    source(srcset="images/listen/listen-1366.jpg" media="(min-width: 1366px)" type="image/jpeg")
+                    source(srcset="images/listen/listen-768.webp" media="(min-width: 768px)" type="image/webp")
+                    source(srcset="images/listen/listen-768.jpg" media="(min-width: 768px)" type="image/jpeg")
+                    source(srcset="images/listen/listen-460.webp" media="(min-width: 460px)" type="image/webp")
+                    source(srcset="images/listen/listen-460.jpg" media="(min-width: 460px)" type="image/jpeg")
+                    source(srcset="images/listen/listen-320.webp" type="image/webp")
+                    img(src="images/listen/listen-320.jpg" alt="listen background image" width="332" height="213")
+            h2.listen__title LISTEN WITHOUT LIMITS AND DOWNLOAD !
+            p.listen__text.
+                Get everything you need for you next show, and bring down the house.
+            form.listen__search(action="#")
+                input.listen__search-field(type="text" placeholder="Search 2,173,108 tracks")
+                button.listen__search-btn
+                    span.visually-hidden Search button
+                    span.listen__search-btn__text Search
+                    svg.listen__search-btn__icon
+                        use(href="images/sprites/main.stack.svg#svg-search")
+                svg.listen__search-icon.svg-icon
+                    use(href="images/sprites/main.stack.svg#svg-search")
+
+    section.features
+        .features__inner
+            ul.features__list
+                li.features__item
+                    h2.features__title MONTHLY PAYOUTS
+                    p.features__text.
+                        Upload, share with fans and earn money
+                li.features__item
+                    h2.features__title FREE PUBLISHING
+                    p.features__text.
+                        Upload your tracks & mixes without limitations
+                li.features__item
+                    h2.features__title MUSICAL LIBRARY
+                    p.features__text.
+                        Find music and artists using advanced search
+                li.features__item
+                    h2.features__title STATISTICS
+                    p.features__text.
+                        Detailed analytics to grow your fan base
+
+    section.best
+        header.best__header
+            h2.title.best__title BEST TRACKS OF OUR DJ POOL
+            .manage
+                .manage__period
+                    a.manage__period--active(href="#") Today
+                    a(href="#") Week
+                    a(href="#") Month
+                .manage__more
+                    a.manage__more-tracks(href="#") See more best tracks
+                    .manage__more-btns
+                        a.manage__more-arrow(href="#")
+                            span.visually-hidden Previous tracks
+                            svg
+                                use(href="images/sprites/main.stack.svg#svg-prev")
+                        a.manage__more-arrow(href="#")
+                            span.visually-hidden Next tracks
+                            svg
+                                use(href="images/sprites/main.stack.svg#svg-next") 
+        .tracks
+            .tracks__list.best__slider
+                a.tracks__item(href="#")
+                    .tracks__poster
+                        picture
+                            source(srcset="images/tracks/poster-1-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/tracks/poster-1-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/tracks/poster-1-mob.webp" type="image/webp")
+                            img(src="images/tracks/poster-1-mob.jpg" alt="poster image" width="106" height="106")
+                    .tracks__info
+                        h3.tracks__title Love Tonight (Dj Dark & Mentol Remix Extended)
+                        p.tracks__author Jacob Jones
+                        .tracks__about.
+                            Subscribe #[span.tracks__about-rate Premium]
+
+                a.tracks__item(href="#")
+                    .tracks__poster
+                        picture
+                            source(srcset="images/tracks/poster-2-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/tracks/poster-2-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/tracks/poster-2-mob.webp" type="image/webp")
+                            img(src="images/tracks/poster-2-mob.jpg" alt="poster image" width="106" height="106")
+                    .tracks__info
+                        h3.tracks__title Love Tonight (Dj Dark & Mentol Remix Extended)
+                        p.tracks__author Jacob Jones
+                        .tracks__about.
+                            Subscribe #[span.tracks__about-rate Premium]
+
+                a.tracks__item(href="#")
+                    .tracks__poster
+                        picture
+                            source(srcset="images/tracks/poster-3-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/tracks/poster-3-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/tracks/poster-3-mob.webp" type="image/webp")
+                            img(src="images/tracks/poster-3-mob.jpg" alt="poster image" width="106" height="106")
+                    .tracks__info
+                        h3.tracks__title Love Tonight (Dj Dark & Mentol Remix Extended)
+                        p.tracks__author Jacob Jones
+                        .tracks__about.
+                            Subscribe #[span.tracks__about-rate Premium]
+
+                a.tracks__item(href="#")
+                    .tracks__poster
+                        picture
+                            source(srcset="images/tracks/poster-4-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/tracks/poster-4-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/tracks/poster-4-mob.webp" type="image/webp")
+                            img(src="images/tracks/poster-4-mob.jpg" alt="poster image" width="106" height="106")
+                    .tracks__info
+                        h3.tracks__title Love Tonight (Dj Dark & Mentol Remix Extended)
+                        p.tracks__author Jacob Jones
+                        .tracks__about.
+                            Subscribe #[span.tracks__about-rate Premium]
+
+                a.tracks__item(href="#")
+                    .tracks__poster
+                        picture
+                            source(srcset="images/tracks/poster-5-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/tracks/poster-5-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/tracks/poster-5-mob.webp" type="image/webp")
+                            img(src="images/tracks/poster-5-mob.jpg" alt="poster image" width="106" height="106")
+                    .tracks__info
+                        h3.tracks__title Love Tonight (Dj Dark & Mentol Remix Extended)
+                        p.tracks__author Jacob Jones
+                        .tracks__about.
+                            Subscribe #[span.tracks__about-rate Premium]
+                a.tracks__item.tracks__item--hide(href="#")
+                    .tracks__poster
+                        picture
+                            source(srcset="images/tracks/poster-6-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/tracks/poster-6-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/tracks/poster-6-mob.webp" type="image/webp")
+                            img(src="images/tracks/poster-6-mob.jpg" alt="poster image" width="106" height="106")
+                    .tracks__info
+                        h3.tracks__title Love Tonight (Dj Dark & Mentol Remix Extended)
+                        p.tracks__author Jacob Jones
+                        .tracks__about.
+                            Subscribe #[span.tracks__about-rate Premium]
+            a.best__more.btn(href="#") See more best tracks
+
+    section.best.best-playlist
+        header.best__header
+            h2.title.best__title BEST PLAYLISTS
+            .manage
+                .manage__period
+                    a.manage__period--active(href="#") Today
+                    a(href="#") Week
+                    a(href="#") Month
+                .manage__more
+                    a.manage__more-tracks(href="#") See more best playlists
+                    .manage__more-btns
+                        a.manage__more-arrow(href="#")
+                            span.visually-hidden Previous tracks
+                            svg
+                                use(href="images/sprites/main.stack.svg#svg-prev")
+                        a.manage__more-arrow(href="#")
+                            span.visually-hidden Next tracks
+                            svg
+                                use(href="images/sprites/main.stack.svg#svg-next") 
+        .playlist
+            .playlist__list.best__slider
+                a.playlist__item(href="#")
+                    .playlist__poster
+                        picture
+                            source(srcset="images/playlist/playlist-1-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/playlist/playlist-1-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/playlist/playlist-1-mob.webp" type="image/webp")
+                            img(src="images/playlist/playlist-1-mob.jpg" alt="poster image" width="72" height="72")
+                    .playlist__info
+                        .playlist__col
+                            h2.playlist__name Playlist name
+                            h3.playlist__author Darlene Robertson
+                        .playlist__col
+                            p.playlist__type Треки
+                            p.playlist__num 65745
+                        .playlist__col
+                            p.playlist__type Время плейлиста
+                            p.playlist__num 06:34:32
+                a.playlist__item(href="#")
+                    .playlist__poster
+                        picture
+                            source(srcset="images/playlist/playlist-2-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/playlist/playlist-2-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/playlist/playlist-2-mob.webp" type="image/webp")
+                            img(src="images/playlist/playlist-2-mob.jpg" alt="poster image" width="72" height="72")
+                    .playlist__info
+                        .playlist__col
+                            h2.playlist__name Playlist name
+                            h3.playlist__author Darlene Robertson
+                        .playlist__col
+                            p.playlist__type Треки
+                            p.playlist__num 65745
+                        .playlist__col
+                            p.playlist__type Время плейлиста
+                            p.playlist__num 06:34:32
+                a.playlist__item(href="#")
+                    .playlist__poster
+                        picture
+                            source(srcset="images/playlist/playlist-3-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/playlist/playlist-3-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/playlist/playlist-3-mob.webp" type="image/webp")
+                            img(src="images/playlist/playlist-3-mob.jpg" alt="poster image" width="72" height="72")
+                    .playlist__info
+                        .playlist__col
+                            h2.playlist__name Playlist name
+                            h3.playlist__author Darlene Robertson
+                        .playlist__col
+                            p.playlist__type Треки
+                            p.playlist__num 65745
+                        .playlist__col
+                            p.playlist__type Время плейлиста
+                            p.playlist__num 06:34:32
+        a.best__more.btn(href="#") See more best playlists
+
+    section.spin.container
+        .spin__inner
+            .background-image
+                picture
+                    source(srcset="images/spin/spin-1600.webp" media="(min-width: 1600px)" type="image/webp")
+                    source(srcset="images/spin/spin-1600.jpg" media="(min-width: 1600px)" type="image/jpeg")
+                    source(srcset="images/spin/spin-1366.webp" media="(min-width: 1366px)" type="image/webp")
+                    source(srcset="images/spin/spin-1366.jpg" media="(min-width: 1366px)" type="image/jpeg")
+                    source(srcset="images/spin/spin-768.webp" media="(min-width: 768px)" type="image/webp")
+                    source(srcset="images/spin/spin-768.jpg" media="(min-width: 768px)" type="image/jpeg")
+                    source(srcset="images/spin/spin-320.webp" type="image/webp")
+                    img(src="images/spin/spin-320.jpg" alt="spin background image" width="332" height="173")
+            h2.spin__title Questions before #[br] taking us for a spin?
+            p.spin__text 
+                a(href="#") Read FAQ 
+                |   or 
+                a(href="#") Contact us
+            a.spin__btn.btn(href="#") SUBSCRIBE NOW!
+
+    section.best.best-authors
+        header.best__header
+            h2.title.best__title BEST AUTHORS
+            .manage
+                .manage__period
+                    a.manage__period--active(href="#") Today
+                    a(href="#") Week
+                    a(href="#") Month
+                .manage__more
+                    a.manage__more-tracks(href="#") See more best authors
+                    .manage__more-btns
+                        a.manage__more-arrow(href="#")
+                            span.visually-hidden Previous tracks
+                            svg
+                                use(href="images/sprites/main.stack.svg#svg-prev")
+                        a.manage__more-arrow(href="#")
+                            span.visually-hidden Next tracks
+                            svg
+                                use(href="images/sprites/main.stack.svg#svg-next") 
+        .author
+            .author__list.best__slider
+                a.author__item(href="#")
+                    .author__photo
+                        picture
+                            source(srcset="images/author/author-1-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/author/author-1-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/author/author-1-mob.webp" type="image/webp")
+                            img(src="images/author/author-1-mob.jpg" alt="author photo" width="106" height="106")
+                    .author__info
+                        h3.author__name Jenny Wilson
+                        p.author__about 12 tracks, 45 albums
+                a.author__item(href="#")
+                    .author__photo
+                        picture
+                            source(srcset="images/author/author-2-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/author/author-2-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/author/author-2-mob.webp" type="image/webp")
+                            img(src="images/author/author-2-mob.jpg" alt="author photo" width="106" height="106")
+                    .author__info
+                        h3.author__name Jenny Wilson
+                        p.author__about 12 tracks, 45 albums
+                a.author__item(href="#")
+                    .author__photo
+                        picture
+                            source(srcset="images/author/author-3-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/author/author-3-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/author/author-3-mob.webp" type="image/webp")
+                            img(src="images/author/author-3-mob.jpg" alt="author photo" width="106" height="106")
+                    .author__info
+                        h3.author__name Jenny Wilson
+                        p.author__about 12 tracks, 45 albums
+                a.author__item(href="#")
+                    .author__photo
+                        picture
+                            source(srcset="images/author/author-4-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/author/author-4-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/author/author-4-mob.webp" type="image/webp")
+                            img(src="images/author/author-4-mob.jpg" alt="author photo" width="106" height="106")
+                    .author__info
+                        h3.author__name Jenny Wilson
+                        p.author__about 12 tracks, 45 albums
+                a.author__item(href="#")
+                    .author__photo
+                        picture
+                            source(srcset="images/author/author-5-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/author/author-5-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/author/author-5-mob.webp" type="image/webp")
+                            img(src="images/author/author-5-mob.jpg" alt="author photo" width="106" height="106")
+                    .author__info
+                        h3.author__name Jenny Wilson
+                        p.author__about 12 tracks, 45 albums
+                a.author__item.author__item--hide(href="#")
+                    .author__photo
+                        picture
+                            source(srcset="images/author/author-6-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/author/author-6-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/author/author-6-mob.webp" type="image/webp")
+                            img(src="images/author/author-6-mob.jpg" alt="author photo" width="106" height="106")
+                    .author__info
+                        h3.author__name Jenny Wilson
+                        p.author__about 12 tracks, 45 albums
+        a.best__more.btn(href="#") See more best authors
+
+    section.best
+        header.best__header
+            h2.title.best__title Best EDM Artists 2021
+            .manage
+                .manage__period
+                    a.manage__period--active(href="#") Today
+                    a(href="#") Week
+                    a(href="#") Month
+                .manage__more
+                    a.manage__more-tracks(href="#") See more best edm artists
+                    .manage__more-btns
+                        a.manage__more-arrow(href="#")
+                            span.visually-hidden Previous tracks
+                            svg
+                                use(href="images/sprites/main.stack.svg#svg-prev")
+                        a.manage__more-arrow(href="#")
+                            span.visually-hidden Next tracks
+                            svg
+                                use(href="images/sprites/main.stack.svg#svg-next")
+        .author
+            .author__list.best__slider
+                a.author__item(href="#")
+                    .author__photo
+                        picture
+                            source(srcset="images/author/author-7-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/author/author-7-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/author/author-7-mob.webp" type="image/webp")
+                            img(src="images/author/author-7-mob.jpg" alt="artist photo" width="106" height="106")
+                    .author__info
+                        h3.author__name Jenny Wilson
+                        p.author__about 12 tracks, 45 albums
+                a.author__item(href="#")
+                    .author__photo
+                        picture
+                            source(srcset="images/author/author-8-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/author/author-8-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/author/author-8-mob.webp" type="image/webp")
+                            img(src="images/author/author-8-mob.jpg" alt="artist photo" width="106" height="106")
+                    .author__info
+                        h3.author__name Jenny Wilson
+                        p.author__about 12 tracks, 45 albums
+                a.author__item(href="#")
+                    .author__photo
+                        picture
+                            source(srcset="images/author/author-9-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/author/author-9-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/author/author-9-mob.webp" type="image/webp")
+                            img(src="images/author/author-9-mob.jpg" alt="artist photo" width="106" height="106")
+                    .author__info
+                        h3.author__name Jenny Wilson
+                        p.author__about 12 tracks, 45 albums
+                a.author__item(href="#")
+                    .author__photo
+                        picture
+                            source(srcset="images/author/author-10-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/author/author-10-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/author/author-10-mob.webp" type="image/webp")
+                            img(src="images/author/author-10-mob.jpg" alt="artist photo" width="106" height="106")
+                    .author__info
+                        h3.author__name Jenny Wilson
+                        p.author__about 12 tracks, 45 albums
+                a.author__item(href="#")
+                    .author__photo
+                        picture
+                            source(srcset="images/author/author-11-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/author/author-11-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/author/author-11-mob.webp" type="image/webp")
+                            img(src="images/author/author-11-mob.jpg" alt="artist photo" width="106" height="106")
+                    .author__info
+                        h3.author__name Jenny Wilson
+                        p.author__about 12 tracks, 45 albums
+                a.author__item.author__item--hide(href="#")
+                    .author__photo
+                        picture
+                            source(srcset="images/author/author-12-desk.webp" media="(min-width: 1024px)" type="image/webp")
+                            source(srcset="images/author/author-12-desk.jpg" media="(min-width: 1024px)" type="image/jpeg")
+                            source(srcset="images/author/author-12-mob.webp" type="image/webp")
+                            img(src="images/author/author-12-mob.jpg" alt="artist photo" width="106" height="106")
+                    .author__info
+                        h3.author__name Jenny Wilson
+                        p.author__about 12 tracks, 45 albums
+        a.best__more.btn(href="#") See more best edm artists
+    
+    .rate
+        section.rate__item.container
+            .rate__inner
+                .background-image
+                    picture
+                        source(srcset="images/rate/rate-1-desk.webp" media="(min-width: 460px)" type="image/webp")
+                        source(srcset="images/rate/rate-1-desk.jpg" media="(min-width: 460px)" type="image/jpeg")
+                        source(srcset="images/rate/rate-1-mob.webp" type="image/webp")
+                        img(src="images/rate/rate-1-mob.jpg" alt="rate background image" width="332" height="302")
+                h2.rate__title MIX PRO
+                ul.rate__list
+                    li  More than 3,000,000 tracks in excellent quality
+                    li  An ability to batch download your favorite tracks
+                    li  Comment and vote for your favorite tracks
+                    li  Create and share playlists
+                    li  Opportunity to be one of the first to hear the best new tracks
+                    li  Customize your own unique feed of tracks, mixes, artists and labels
+                a.rate__btn.btn(href="#") SUBSCRIBE NOW!
+        section.rate__item.container
+            .rate__inner
+                .background-image
+                    picture
+                        source(srcset="images/rate/rate-2-desk.webp" media="(min-width: 460px)" type="image/webp")
+                        source(srcset="images/rate/rate-2-desk.jpg" media="(min-width: 460px)" type="image/jpeg")
+                        source(srcset="images/rate/rate-2-mob.webp" type="image/webp")
+                        img(src="images/rate/rate-2-mob.jpg" alt="rate background image" width="332" height="302")
+                h2.rate__title MIX DRIVE
+                ul.rate__list
+                    li  More than 3,000,000 tracks in excellent quality
+                    li  An ability to batch download your favorite tracks
+                    li  Comment and vote for your favorite tracks
+                    li  Create and share playlists
+                    li  Opportunity to be one of the first to hear the best new tracks
+                    li  Customize your own unique feed of tracks, mixes, artists and labels
+                a.rate__btn.btn(href="#") SUBSCRIBE NOW!
+        

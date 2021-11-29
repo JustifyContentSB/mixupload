@@ -1,0 +1,86 @@
+.manage
+   display: flex
+   justify-content: space-between
+   align-items: center
+   &__period
+      display: flex
+      overflow-x: auto
+      -ms-overflow-style: none
+      overflow: -moz-scrollbars-none
+      &::-webkit-scrollbar
+         width: 0
+         height: 0
+      a
+         margin-right: 10px
+         padding: 5px 20px
+         background: transparent
+         border-radius: 10px
+         text-align: center
+         font-weight: 300
+         font-size: 12px
+         line-height: 130%
+         &.manage__period--active
+            background: var(--accent)
+            color: #fff
+            font-weight: 500
+   &__more
+      display: none
+      align-items: center
+      &-tracks
+         min-width: 202px
+         padding: 8px 36px
+         min-height: 36px
+         display: flex
+         justify-content: center
+         align-items: center
+         font-weight: 300
+         font-size: 14px
+         line-height: 130%
+         text-align: center
+         border: 1px solid #E6E6E6
+         border-radius: 10px
+      &-btns
+         margin-left: 24px
+         display: flex
+         align-items: center
+      &-arrow
+         width: 36px
+         height: 36px
+         margin-left: 12px
+         display: flex
+         justify-content: center
+         align-items: center
+         border: 1px solid #E6E6E6
+         border-radius: 10px
+         &:first-child
+            margin-left: 0
+         svg
+            width: 18px
+            height: 18px
+            fill: var(--theme700)
+
+@media screen and (min-width: 768px)
+   .manage
+      &__period
+         overflow-x: visible
+         flex-wrap: wrap
+      &__more
+         display: flex
+
+@media screen and (min-width: 1024px)
+   .manage
+      &__period
+         a
+            font-size: 13px
+      &__more
+         &-tracks
+            min-height: 42px
+         &-arrow
+            width: 42px
+            height: 42px
+
+@media screen and (min-width: 1366px)
+   .manage
+      &__period
+         a
+            font-size: 14px
