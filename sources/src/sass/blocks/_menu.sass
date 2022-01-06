@@ -63,8 +63,22 @@
       &-main
          &__sub
             margin-bottom: 20px
+   &__box
+      position: relative
+      &--active
+         background: var(--accent)
+         color: #fff
+         .svg-icon
+            fill: #fff
+         .menu__link-arrow
+            background: #fff
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2)
+            svg
+               fill: var(--accent)
+               transform: rotate(180deg)
    &__link
       padding: 12px 17px
+      padding-right: 64px
       min-height: 48px
       display: flex
       align-items: center
@@ -91,15 +105,9 @@
             fill: var(--accent)
          &--active
             background: var(--accent)
-            color: #fff
+            color: white
             .svg-icon
-               fill: #fff
-            .menu__link-arrow
-               background: #fff
-               box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2)
-               svg
-                  fill: var(--accent)
-                  transform: rotate(180deg)
+               fill: white
       &-arrow
          margin-left: auto
          width: 30px
@@ -110,10 +118,19 @@
          display: flex
          justify-content: center
          align-items: center
+         position: absolute
+         right: 17px
+         top: 50%
+         transform: translateY(-50%)
          svg
             width: 14px
             height: 14px
             fill: white
+         &--active
+            background: white
+            svg
+               transform: rotate(180deg)
+               fill: var(--accent)
    &__submenu
       margin-top: 4px
       display: none
@@ -148,9 +165,6 @@
          &__submenu
             margin-top: 4px
             margin-bottom: 14px
-            display: none
-            &--active
-               display: block
             .menu
                &__link
                   background: var(--theme050)
@@ -170,9 +184,105 @@
    .menu
       padding: 20px 0
       display: block
-      border-right: 1px solid var(--theme040)
+      // border-right: 1px solid var(--theme040)
+      &::after
+         content: ''
+         position: absolute
+         z-index: -1
+         right: 0
+         top: 0
+         bottom: 0
+         width: 1px
+         background: var(--theme040)
       &__header
          display: none
       &__logo
          margin-bottom: 50px
          display: block
+      &__top
+         margin-bottom: 20px
+         padding: 0
+      &__bottom
+         margin-bottom: 20px
+         padding: 0
+      &__item
+         margin-bottom: 10px
+         &:last-child
+            margin-bottom: 0
+      &__link
+         padding: 7px 45px
+         min-height: 38px
+         background: none
+         &-arrow
+            display: none
+         &-genres
+            font-size: 13px
+            line-height: 15px
+            color: var(--theme800)
+            border: none
+            .svg-icon
+               fill: var(--theme800)
+      &__submenu
+         padding: 25px 0
+         overflow-y: auto
+         z-index: 10
+         width: 250px
+         height: 100vh
+         position: fixed
+         left: 250px
+         top: 0
+         background: var(--theme020)
+         text-transform: uppercase
+         &-item
+            margin-bottom: 7px
+            padding: 0 25px
+            &__submenu
+               z-index: 8
+               background: var(--theme040)
+               text-transform: none
+               transform: translateX(0)
+         .menu
+            &__link
+               min-height: 36px
+               background: transparent
+               border: none
+               font-size: 12px
+               line-height: 14px
+               position: relative
+               &::after
+                  content: ''
+                  position: absolute
+                  right: 16px
+                  top: 50%
+                  transform: translateY(-50%)
+                  width: 16px
+                  height: 16px
+                  mask-image: url('../images/icons/arrow-right.svg')
+                  background-color: var(--theme800)
+      &__item
+         &:hover,
+         &:focus
+            & > .menu__submenu
+               display: block
+      &__submenu-item
+         &__submenu
+            .menu
+               &__link
+                  &::after
+                     display: none
+         &:hover,
+         &:focus
+            & > .menu__box
+               & > .menu__link
+                  background: var(--accent)
+                  color: #fff
+                  &::after
+                     background: white
+            & > .menu__link
+               background: var(--accent)
+               color: #fff
+            & > .menu__submenu
+               display: block
+               transform: translateX(250px)
+
+      

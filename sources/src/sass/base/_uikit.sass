@@ -1,0 +1,149 @@
+.uikit
+   padding: 25px
+   background: #999999
+   &-box
+      margin-bottom: 100px
+      &:last-child
+         margin-bottom: 0
+      &__title
+         margin-bottom: 30px
+         font-weight: bold
+         font-size: 26px
+         line-height: 100%
+         text-transform: uppercase
+         color: var(--theme000)
+   &-theme
+      margin-bottom: 20px
+      font-weight: bold
+      font-size: 20px
+      line-height: 120%
+      color: var(--theme999)
+      text-transform: uppercase
+   &-bl
+      width: 100%
+      max-width: 460px
+      margin-bottom: 20px
+      padding: 30px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      background: var(--theme000)
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15)
+      border-radius: 20px
+   &-button
+      margin-bottom: 50px
+      &:last-child
+         margin: 0
+   &-title
+      display: block
+      margin-bottom: 10px
+      font-size: 13px
+      line-height: 15px
+      font-weight: 400
+      color: var(--theme300)
+   
+.btn
+   display: inline-flex
+   justify-content: center
+   align-items: center
+   min-width: 139px
+   min-height: 36px
+   padding: 2px 20px
+   text-align: center
+   text-transform: uppercase
+   font-size: 14px
+   line-height: 100%
+   font-weight: bold
+   background: var(--accent)
+   color: #fff
+   border-radius: 10px
+   border: none
+   cursor: pointer
+   transition: background .2s ease, color .2s ease
+   &-high
+      min-height: 48px
+      padding: 4px 20px
+   &.btn-hovered,
+   &:hover:enabled,
+   &:focus:enabled
+      background: #CB1338
+   &.btn-actived,
+   &:active:enabled
+      background: #E81943
+      color: #fff
+   &-disabled, &:disabled
+      background: rgba(#E81943, .4)
+      cursor: default
+   &-outline
+      color: var(--theme700)
+      background: transparent
+      border: 2px solid var(--accent)
+      .svg__icon
+         fill: var(--theme700)
+      &.btn-hovered,
+      &:hover:enabled,
+      &:focus:enabled
+         color: var(--theme999)
+         background: rgba(232, 25, 67, 0.15)
+      &.btn-actived,
+      &:active:enabled
+         background: var(--accent)
+         color: #fff
+      &.btn-disabled, &:disabled
+         color: var(--theme200)
+         border: 2px solid rgba(232, 25, 67, 0.3)
+         background: transparent
+   &-secondary
+      background: var(--theme500)
+      color: var(--theme000)
+      &.btn-hovered,
+      &:hover:enabled,
+      &:focus:enabled
+         background: var(--theme700)
+      &.btn-actived,
+      &:active:enabled
+         background: var(--theme500)
+      &.btn-disabled, &:disabled
+         color: var(--theme350)
+         background: var(--theme100)
+   &-right-icon
+      min-width: 173px
+      padding-left: 40px
+      .btn__svg
+         margin-left: 30px
+   &-left-icon
+      min-width: 173px
+      padding-right: 40px
+      .btn__svg
+         margin-right: 30px
+   &__svg
+      width: 24px
+      height: 24px
+      fill: currentColor
+   &-double-icon
+      min-width: 207px
+      .btn
+         &__text
+            margin: 0 30px
+   &-icon
+      min-width: 64px
+
+@media screen and (min-width: 1280px)
+   .uikit
+      padding: 50px
+      &-bl
+         margin-bottom: 0
+         padding: 50px
+      &-box
+         &__title
+            margin-bottom: 50px
+            font-size: 53px
+         &__inner
+            width: 100%
+            max-width: 1000px
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 50px
+      &-theme
+         margin-bottom: 50px
+         font-size: 40px
